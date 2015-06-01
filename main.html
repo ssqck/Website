@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>DUVANGAMING</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="reset.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//navbar
+			$('#menu li:nth-child(2)').bind('mouseover', openSubMenu);
+			$('#menu li:nth-child(2)').bind('mouseout', closeSubMenu);
+		
+			function openSubMenu() {
+				$(this).find('ul').css('visibility', 'visible');	
+				$('#menu li:nth-child(2)').css('background-color','#383737');
+			};
+		
+			function closeSubMenu() {
+				$(this).find('ul').css('visibility', 'hidden');	
+				$('#menu li:nth-child(2)').css('background-color','#262626');
+			};
+				
+			/*background-slideshow
+			var body = $('#sekcija');
+			var backgrounds = new Array(
+			'url(image1.jpg)',
+			'url(image2.jpg)',
+			'url(image3.jpg)',
+			'url(background1.jpg)',
+			'url(background2.jpg)'
+			);
+			var current = 0;
+
+			function nextBackground() {
+			body.css(
+			'background-image',
+			backgrounds[current = ++current % backgrounds.length]
+			);
+			$('#sekcija').css('background-size','cover');
+			setTimeout(nextBackground, 10000);
+			}
+			setTimeout(nextBackground, 10000);
+			body.css('background-image', backgrounds[0]);
+			*/
+			});
+			$('#type-selector > li').bind('clik', getType);
+			function getType() {
+				var type = $(this).find('li').val();
+			};
+	</script>
+</head>
+<body>
+	<div id="big_wrapper">
+		<div id="header">
+			<nav>
+				<ul id="menu">
+					<li><a href="main.html" style="background-color:#383737">Home</a></li>
+					<li><a href="members.html" id="members">Members</a>
+						<ul>
+							<li><a href="">Član 1</a></li>
+							<li><a href="">Član 2</a></li>
+							<li><a href="">Član 3</a></li>
+							<li><a href="">Član 4</a></li>
+							<li><a href="">Član 5</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery.hmtl">Screenshots</a></li>
+					<li><a href="about_us.html">About us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="sekcija">
+		<section id="section">
+			<p>Welcome to imeklana!</p>
+		</section>
+		</div>
+		<footer id="footer">
+			<p>imeklanaGAMING Copyright®</p>
+		</footer>
+		</div>
+<body>
+</html>

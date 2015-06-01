@@ -1,0 +1,99 @@
+#header{
+	width:100%;
+	background-color:#262626;
+	text-align:right;
+	border-bottom:2px solid #545252;
+}
+#menu li{
+	display:inline-block;
+}
+#menu li a{
+	color:white;
+	text-decoration:none;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:27.2px;
+	padding:10px;
+}
+#menu li a:visited{
+	color:white;
+}
+#menu li a:link{
+	color:white;
+	display:block;
+}
+#menu > li > a:hover{
+	color:white;
+	background-color:#383737;
+	
+}
+#menu{
+	padding:30px;
+}
+#menu li ul{
+	position:absolute;
+	visibility:hidden;
+}
+#menu li ul li{
+	display:inline;
+	
+}
+#menu li ul li a{
+	font-size:25px;
+}
+#menu li ul li a:link{
+	background-color:#383737;
+	border-top:1px solid #545252;
+}
+#menu li ul li a:hover{
+	background-color:#262626;
+}
+#section{
+	margin-left:auto;
+	margin-right:auto;
+}
+#section p{
+	color:#757575;
+	font-family:Verdana;
+	font-size:50px;
+	text-align:center;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 500px;
+}
+#footer{
+	width:100%;
+	background-color:#262626;
+	text-align:left;
+	border-top:2px solid #545252;
+	position:fixed;
+	bottom:0;
+	left:0;
+	padding:20px;
+}
+#footer p{
+	display:inline-block;
+	padding:10px;
+	padding-right:5px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#footer a{
+	color:#383737;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#footer a:link{
+	
+	text-decoration:none;
+	
+}
+#footer a:visited{
+	text-decoration:none;
+}
+#footer a:hover{
+	
+}
+#sekcija{
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center center;
+	background-image:url('background.jpg');
+}
